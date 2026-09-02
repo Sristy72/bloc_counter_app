@@ -10,6 +10,22 @@ class CounterScreen extends StatefulWidget {
 class _CounterScreenState extends State<CounterScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Counter Example'),
+      ),
+      body: Column(
+        children: [
+          Text('0', style: TextStyle(fontSize: 60),),
+          Row(
+            children: [
+              ElevatedButton(onPressed: (){}, child: Text('Increment')),
+              SizedBox(width: 20,),
+              ElevatedButton(onPressed: (){}, child: Text('Decrement')),
+            ],
+          )
+        ],
+      ),
+    );
   }
 }
