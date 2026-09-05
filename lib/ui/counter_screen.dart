@@ -13,11 +13,14 @@ class _CounterScreenState extends State<CounterScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Counter Example'),
+        centerTitle: true,
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text('0', style: TextStyle(fontSize: 60),),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ElevatedButton(onPressed: (){}, child: Text('Increment')),
               SizedBox(width: 20,),
